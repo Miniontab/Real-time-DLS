@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>570</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>790</x>
+      <y>550</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_timer3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>570</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>950</x>
+      <y>550</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nextState</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>570</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>610</x>
+      <y>550</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>main</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>560</x>
+      <y>580</y>
+      <w>470</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+[_timer3 == 0]
+
+
+layer=-1
+bg=light_gray
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>620</y>
+      <w>370</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>0
+lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>650</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lockdown_time
+lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

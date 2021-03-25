@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>608</y>
+      <w>352</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;70.0;50.0;70.0;10.0;160.0;10.0;160.0;50.0;200.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>208</x>
+      <y>128</y>
+      <w>1552</w>
+      <h>656</h>
+    </coordinates>
+    <panel_attributes>Lockdown countdown LCD display timing diagram
+--
+halign=left
+
+Button
+
+--
+
+TIMER3
+(counting)
+
+--
+ISR
+INT4
+
+--
+
+LCD
+(display results)
+
+--
+
+
+CLK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>688</y>
+      <w>320</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=|&lt;-&gt;|
+1µs
+period</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>608</y>
+      <w>320</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;140.0;10.0;140.0;50.0;180.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>608</y>
+      <w>320</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;140.0;10.0;140.0;50.0;180.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>368</y>
+      <w>944</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;230.0;40.0;230.0;10.0;390.0;10.0;390.0;40.0;570.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>176</y>
+      <w>1184</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;40.0;40.0;40.0;10.0;220.0;10.0;220.0;40.0;720.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>336</y>
+      <w>656</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;390.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>848</x>
+      <y>272</y>
+      <w>640</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;40.0;50.0;40.0;10.0;200.0;10.0;200.0;50.0;380.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>688</y>
+      <w>320</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=|&lt;-&gt;|
+1s
+period</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>608</y>
+      <w>320</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;140.0;10.0;140.0;50.0;180.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>368</y>
+      <w>384</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;50.0;40.0;50.0;10.0;200.0;10.0;200.0;40.0;220.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1376</x>
+      <y>608</y>
+      <w>320</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;140.0;10.0;140.0;50.0;180.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1168</x>
+      <y>688</y>
+      <w>320</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=|&lt;-&gt;|
+1µs
+period</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>480</y>
+      <w>1504</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;740.0;40.0;740.0;10.0;900.0;10.0;900.0;40.0;920.0;40.0</additional_attributes>
+  </element>
+</diagram>

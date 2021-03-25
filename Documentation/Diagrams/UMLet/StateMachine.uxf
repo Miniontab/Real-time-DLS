@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>396</x>
+      <y>495</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>486</x>
+      <y>459</y>
+      <w>216</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*State 0: Standby*
+--
+entry / initialize variables and LCD
+do / for-loop for password registration
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>495</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>459</x>
+      <y>801</y>
+      <w>270</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*State 1: Check input password*
+--
+do / CheckPassword((*p_passw),(*p_input));
+exit / determine next state
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>594</x>
+      <y>261</y>
+      <w>171</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*State 2: Lockdown mode*
+--
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>657</x>
+      <y>612</y>
+      <w>162</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>*State 3: Access granted*
+--
+valign=top
+do / Light blue LEDs
+Display "Access granted"
+Spin servo motor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>909</x>
+      <y>459</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*State 4: Access denied*
+--
+do / Light red LEDs
+Display "Access denied"
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>909</x>
+      <y>315</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*State 5*
+--
+
+*Reserved for future use*
+
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>495</y>
+      <w>234</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+*if(_intrFlag &amp;&amp; !_intrFlag_EG)*</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>378</y>
+      <w>180</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ISR(TIMER1_COMPA_vect)</panel_attributes>
+    <additional_attributes>140.0;90.0;140.0;20.0;50.0;20.0;50.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>351</y>
+      <w>198</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+*if(_intrFlag &amp;&amp; _intrFlag_EG)*</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>549</y>
+      <w>27</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>720</y>
+      <w>171</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+*if("password is correct")*</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>549</y>
+      <w>288</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;330.0;300.0;330.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>468</y>
+      <w>234</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>351</y>
+      <w>27</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>549</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>216</y>
+      <w>180</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ISR(TIMER3_COMPA_vect)</panel_attributes>
+    <additional_attributes>160.0;50.0;160.0;20.0;30.0;20.0;30.0;50.0</additional_attributes>
+  </element>
+</diagram>
